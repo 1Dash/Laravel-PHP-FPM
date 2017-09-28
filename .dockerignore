@@ -1,0 +1,12 @@
+omnificent
+.git
+.idea
+.DS_Store
+
+.dockerignore
+.gitattributes
+.gitignore
+circle.yml
+Dockerfile
+LICENSE
+README.md

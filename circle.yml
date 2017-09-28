@@ -1,0 +1,17 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - docker login -u $DOCKER_USER -p $DOCKER_PASS -e $DOCKER_EMAIL
+
+test:
+  pre:
+    - docker build --tag="1dash/laravel-php-fpm:latest" ./
+
+deployment:
+  master:
+    branch: [master]
+    commands:
+      - docker push 1dash/laravel-php-fpm:latest
