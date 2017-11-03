@@ -4,6 +4,7 @@ MAINTAINER "Austin Maddox" <austin@maddoxbox.com>
 
 RUN docker-php-ext-install \
     bcmath \
+    exif \
     mbstring \
     opcache \
     pdo_mysql
